@@ -1,0 +1,38 @@
+[
+  {
+    "nombreConcesionario": "Das auto",
+    "estaAbierto": true,
+    "superficie": 1000.0,
+    "numConsesionario": 1,
+    "fechaApertura": "Jan 21, 2020, 12:12:00 AM",
+    "autos": [
+      {
+        "marca": "Mitsubishi",
+        "año": "Jan 4, 2020, 12:07:00 AM",
+        "esUsado": false,
+        "precio": 56000.0,
+        "numPuertas": 5,
+        "numChasis": "QWERTy",
+        "modelo": "Montero "
+      }
+    ]
+  },
+  {
+    "nombreConcesionario": "EcuaWagen",
+    "estaAbierto": false,
+    "superficie": 500.0,
+    "numConsesionario": 2,
+    "fechaApertura": "Jan 19, 2007, 12:05:00 AM",
+    "autos": [
+      {
+        "marca": "VolksWagen",
+        "año": "Jan 4, 2021, 12:01:00 AM",
+        "esUsado": false,
+        "precio": 25000.0,
+        "numPuertas": 4,
+        "numChasis": "AQWSII",
+        "modelo": "Bora"
+      }
+    ]
+  }
+]

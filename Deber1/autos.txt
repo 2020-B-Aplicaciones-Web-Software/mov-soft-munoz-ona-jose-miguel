@@ -1,0 +1,18 @@
+[
+  {
+    "marca": "Suzuki",
+    "año": "Dec 31, 1969, 7:00:02 PM",
+    "esUsado": true,
+    "precio": 13500.0,
+    "numPuertas": 5,
+    "numChasis": "AED784"
+  },
+  {
+    "marca": "Toyota",
+    "año": "Dec 31, 1969, 7:00:20 PM",
+    "esUsado": false,
+    "precio": 20000.0,
+    "numPuertas": 4,
+    "numChasis": "AQWED"
+  }
+]
