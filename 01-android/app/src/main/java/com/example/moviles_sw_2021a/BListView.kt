@@ -1,5 +1,6 @@
 package com.example.moviles_sw_2021a
 
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +11,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
+import androidx.appcompat.app.AlertDialog
 
 class BListView : AppCompatActivity() {
     var posicionItemSeleccionado = 0
@@ -28,17 +30,45 @@ class BListView : AppCompatActivity() {
         val listViewEjemplo= findViewById<ListView>(R.id.txvEjemplo)
         listViewEjemplo.adapter=adaptador
 
-     /*   listViewEjemplo
+        listViewEjemplo
             .setOnItemLongClickListener { adapterView, view, posicion, id ->
                 Log.i("list-view","Dio Click ${posicion}")
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle("Titulo")
+                //builder.setMessage("Mensaje")
+                val seleccionUsuario = booleanArrayOf(
+                    true,
+                    false,
+                    true
+                )
+                val opciones = resources.getStringArray(R.array.string_array_opciones_dialogo)
+                builder.setMultiChoiceItems(
+                    opciones,
+                    seleccionUsuario,
+                    {dialog,which,isChecked ->
+                        Log.i("List-view","${which} ${isChecked}")
+                    }
+                )
+                /*builder.setPositiveButton(
+                    "Si",
+                     DialogInterface.OnClickListener { dialog,which ->
+                        Log.i("List-view","Si")
+                    }
+                )
+                builder.setNegativeButton(
+                    "No",
+                    null
+                )*/
+                val dialogo = builder.create()
+                dialogo.show()
                 return@setOnItemLongClickListener true
-            }*/
+            }
 
-        registerForContextMenu(listViewEjemplo)
+        //registerForContextMenu(listViewEjemplo)
 
         val botonListView = findViewById<Button>(R.id.btnListViewAnadir)
         botonListView.setOnClickListener{
-            anadirItemsAlListView( BEntrenador("Mikkel","mk@epn.edu"),arregloNumeros,adaptador)
+            anadirItemsAlListView( BEntrenador("Mikkel","mk@epn.edu",null),arregloNumeros,adaptador)
         }
 
     }

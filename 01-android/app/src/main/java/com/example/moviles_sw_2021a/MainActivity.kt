@@ -35,6 +35,12 @@ class MainActivity : AppCompatActivity() {
                 )
                 startActivityForResult(intentConRespuestaImplicito,CODIGO_RESPUESTA_INTENT_IMPLICITO)
             }
+
+        val botonIrAListaBD = findViewById<Button>(R.id.btnIrListaBd)
+        botonIrAListaBD
+            .setOnClickListener {
+                abrirCicloVida(ListaUsuariosBD::class.java)
+            }
     }
 
     fun abrirActividadConParametros(
@@ -45,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         intentExplicito.putExtra("apellido","Muñoz")
         intentExplicito.putExtra("edad",22)
         intentExplicito.putExtra("entrenador",
-            BEntrenador("Miguel","Munoz")
+            BEntrenador("Miguel","Munoz",null)
             )
         startActivityForResult(intentExplicito,CODIGO_RESPUESTA_INTENT_EXPLICITO)
     }

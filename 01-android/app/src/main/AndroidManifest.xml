@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Movilessw2021A">
-        <activity android:name=".CIntentExplicitoParametros"></activity>
+        <activity android:name=".EntradaDatosUsuarioBD"></activity>
+        <activity android:name=".ListaUsuariosBD" />
+        <activity
+            android:name=".ListaBD"
+            android:label="@string/title_activity_lista_bd"
+            android:theme="@style/Theme.Movilessw2021A.NoActionBar" />
+        <activity android:name=".CIntentExplicitoParametros" />
         <activity android:name=".BListView">
             <intent-filter>
 

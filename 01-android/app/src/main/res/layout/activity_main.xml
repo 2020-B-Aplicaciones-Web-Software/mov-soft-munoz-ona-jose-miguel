@@ -55,11 +55,22 @@
         android:id="@+id/btnIntentImplicito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="36dp"
         android:text="Implicito"
         app:layout_constraintEnd_toEndOf="@+id/btnIrIntent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="@+id/btnIrIntent"
         app:layout_constraintTop_toBottomOf="@+id/btnIrIntent" />
+
+    <Button
+        android:id="@+id/btnIrListaBd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ir lista BD"
+        app:layout_constraintEnd_toEndOf="@+id/btnIntentImplicito"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/btnIntentImplicito"
+        app:layout_constraintTop_toBottomOf="@+id/btnIntentImplicito" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

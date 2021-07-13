@@ -32,6 +32,15 @@
         "numPuertas": 4,
         "numChasis": "AQWSII",
         "modelo": "Bora"
+      },
+      {
+        "marca": "Volkswagen",
+        "año": "Jan 4, 2005, 12:08:00 AM",
+        "esUsado": true,
+        "precio": 10000.0,
+        "numPuertas": 4,
+        "numChasis": "QOIUS",
+        "modelo": "Tiguan"
       }
     ]
   }
