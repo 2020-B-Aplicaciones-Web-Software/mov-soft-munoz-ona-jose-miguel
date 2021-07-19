@@ -41,6 +41,11 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 abrirCicloVida(ListaUsuariosBD::class.java)
             }
+        val botonIrRecyclerView = findViewById<Button>(R.id.btnIrRecyclerView)
+        botonIrRecyclerView
+            .setOnClickListener {
+                abrirCicloVida(GRecyclerView::class.java)
+            }
     }
 
     fun abrirActividadConParametros(
