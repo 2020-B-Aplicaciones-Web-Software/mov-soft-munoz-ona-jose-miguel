@@ -23,10 +23,8 @@ class SQLiteHelperAuto(
                 puertas INTEGER,
                 modelo TEXT,
                 numConcesionario INTEGER REFERENCES CONCESIONARIO(numero)
-                ON UPDATE CASCADE ON DELETE CASCADE
                 )
             """.trimIndent()
-        Log.i("db","Se creo la tabla AUTO")
         db?.execSQL(scriptCreacionTablaAuto)
     }
 

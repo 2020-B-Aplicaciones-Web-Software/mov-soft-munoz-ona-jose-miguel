@@ -19,7 +19,7 @@ class SQLiteHelperConcesionario(
         val scriptCreacion =
             """
                 CREATE TABLE CONCESIONARIO(
-                numero INTEGER PRYMARY KEY,
+                numero INTEGER PRIMARY KEY,
                 nombre TEXT,
                 abierto BOOLEAN,
                 superficie REAL,
@@ -36,8 +36,7 @@ class SQLiteHelperConcesionario(
                 precio REAL,
                 puertas INTEGER,
                 modelo TEXT,
-                numConcesionario INTEGER REFERENCES CONCESIONARIO(numero)
-                ON UPDATE CASCADE ON DELETE CASCADE
+                numConcesionario INTEGER REFERENCES CONCESIONARIO(numero) ON DELETE CASCADE
                 )
             """.trimIndent()
         db?.execSQL(scriptCreacionTablaAuto)

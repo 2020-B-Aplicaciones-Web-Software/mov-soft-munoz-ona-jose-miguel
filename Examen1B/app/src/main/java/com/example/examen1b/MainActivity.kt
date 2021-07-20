@@ -17,6 +17,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 class MainActivity : AppCompatActivity() {
     var posicionElementoSeleccionado = 0
     val baseDatosConcesionario = SQLiteHelperConcesionario(this)
+    val baseDatosAuto = SQLiteHelperAuto(this)
     val INTENT_N_CODE = 200
     val INTENT_E_CODE = 201
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -91,6 +92,10 @@ class MainActivity : AppCompatActivity() {
                     DialogInterface.OnClickListener { dialog, which ->
                         if(elementoAEliminar != null) {
                             resultado = baseDatosConcesionario.eliminarConcesionario(elementoAEliminar.numConsesionario)
+                            val listaAutos = baseDatosAuto.listarAutosDeConcesionario(elementoAEliminar.numConsesionario)
+                            listaAutos?.forEach{
+                                baseDatosAuto.eliminarAuto(it.numChasis!!)
+                            }
                             if(resultado){
                                 llenarListView()
                             }
