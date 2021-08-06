@@ -16,7 +16,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.181" />
+        app:layout_constraintVertical_bias="0.139" />
 
     <Button
         android:id="@+id/btnIrCicloVida"
@@ -77,11 +77,21 @@
         android:id="@+id/btnIrRecyclerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="28dp"
         android:text="Recycler View"
         app:layout_constraintEnd_toEndOf="@+id/btnIrListaBd"
         app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="@+id/btnIrListaBd"
         app:layout_constraintTop_toBottomOf="@+id/btnIrListaBd" />
+
+    <Button
+        android:id="@+id/btn_ir_http"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="HTTP"
+        app:layout_constraintEnd_toEndOf="@+id/btnIrRecyclerView"
+        app:layout_constraintStart_toStartOf="@+id/btnIrRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/btnIrRecyclerView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
