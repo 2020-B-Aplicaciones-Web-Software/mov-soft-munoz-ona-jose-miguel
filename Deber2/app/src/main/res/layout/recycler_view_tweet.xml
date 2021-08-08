@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/borde_sup_inf">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_foto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/img_foto"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txv_nombre_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv_arroba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:maxLines="1"
+                    android:paddingRight="8dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:text="·"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txv_hora_pub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+
+                <ImageButton
+                    android:id="@+id/btn_opciones_tweet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    android:textAlignment="gravity" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txv_contenido_tweet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    app:srcCompat="@drawable/ic_reply" />
+
+                <TextView
+                    android:id="@+id/txv_numero_replies"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:maxLines="1" />
+
+                <ImageButton
+                    android:id="@+id/btn_retweet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    app:srcCompat="@drawable/retweet" />
+
+                <TextView
+                    android:id="@+id/txv_numero_retweets"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical" />
+
+                <ImageButton
+                    android:id="@+id/btn_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+                <TextView
+                    android:id="@+id/txv_numero_likes"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical" />
+
+                <ImageButton
+                    android:id="@+id/btn_compartir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    app:srcCompat="@drawable/ic_outline_share_24" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
