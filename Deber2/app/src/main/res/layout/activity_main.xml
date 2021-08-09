@@ -29,7 +29,7 @@
                 android:scaleType="fitStart"
                 android:scaleX="0.60"
                 android:scaleY="0.60"
-                app:srcCompat="@drawable/profile" />
+                app:srcCompat="@drawable/perfil" />
 
 
             <ImageView
