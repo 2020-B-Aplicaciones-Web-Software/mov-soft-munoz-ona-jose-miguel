@@ -10,49 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@drawable/borde_inf">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="fitStart"
-                android:scaleX="0.60"
-                android:scaleY="0.60"
-                app:srcCompat="@drawable/perfil" />
-
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleX="0.50"
-                android:scaleY="0.50"
-                app:srcCompat="@drawable/bird"
-                app:tint="#2196F3" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="fitEnd"
-                android:scaleX="0.50"
-                android:scaleY="0.50"
-                app:srcCompat="@drawable/ic_star"
-                app:tint="#2196F3" />
-        </LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_above="@id/navbar"
+            android:id="@+id/fl_contenedor"
+            />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/navbar"
@@ -68,30 +32,6 @@
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_lista_tweets"
-            android:layout_width="match_parent"
-            android:layout_height="623dp"
-            app:layout_constraintBottom_toTopOf="@+id/navbar"
-            app:layout_constraintEnd_toEndOf="@id/linearLayout"
-            app:layout_constraintEnd_toStartOf="@id/navbar"
-            app:layout_constraintHorizontal_bias="0.0"
-            android:layout_above="@id/navbar"
-            android:layout_below="@id/linearLayout"/>
-
     </RelativeLayout>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btn_nuevo_tweet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894"
-        app:srcCompat="@drawable/ic_compose" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
