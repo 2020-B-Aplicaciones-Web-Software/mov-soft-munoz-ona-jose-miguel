@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "450357372822",
+    "project_id": "mvsoft-2021a-munona",
+    "storage_bucket": "mvsoft-2021a-munona.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450357372822:android:5128b350fef11153ee5fb7",
+        "android_client_info": {
+          "package_name": "com.example.firebasedos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450357372822-09ep1ou0mfrmcd3ddj3k2oj9dmlv0q6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw9nRX8kV4Ru1nQy7M5-CY_CHtDV_NXYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450357372822-09ep1ou0mfrmcd3ddj3k2oj9dmlv0q6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450357372822:android:85e5ba153f13f6faee5fb7",
+        "android_client_info": {
+          "package_name": "com.example.firebaseuno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450357372822-09ep1ou0mfrmcd3ddj3k2oj9dmlv0q6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw9nRX8kV4Ru1nQy7M5-CY_CHtDV_NXYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450357372822-09ep1ou0mfrmcd3ddj3k2oj9dmlv0q6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
