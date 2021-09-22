@@ -50,20 +50,19 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.308" />
 
     <Button
         android:id="@+id/btn_ir_restaurante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="40dp"
         android:text="Restaurante"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/btn_producto"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="@+id/btn_producto"
         app:layout_constraintTop_toBottomOf="@+id/btn_producto" />
 
@@ -78,4 +77,37 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="@+id/btn_ir_restaurante"
         app:layout_constraintTop_toBottomOf="@+id/btn_ir_restaurante" />
+
+    <Button
+        android:id="@+id/btn_ir_mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Mapas"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ir_pedidos"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/btn_ir_pedidos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ir_pedidos" />
+
+    <Button
+        android:id="@+id/btn_ordenes_restaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ordenes Restaurantes"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ir_mapa"
+        app:layout_constraintStart_toStartOf="@+id/btn_ir_mapa"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ir_mapa" />
+
+    <Button
+        android:id="@+id/btn_mis_pedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Mis Pedidos"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_producto"
+        app:layout_constraintEnd_toEndOf="@+id/btn_producto"
+        app:layout_constraintStart_toStartOf="@+id/btn_producto" />
 </androidx.constraintlayout.widget.ConstraintLayout>

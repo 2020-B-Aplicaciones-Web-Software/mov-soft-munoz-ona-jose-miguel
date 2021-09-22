@@ -52,6 +52,32 @@ class MainActivity : AppCompatActivity() {
             )
             startActivity(intent)
         }
+
+        val botonMapa = findViewById<Button>(R.id.btn_ir_mapa)
+        botonMapa.setOnClickListener {
+            val intent = Intent(
+                this,
+                FMapa::class.java
+            )
+            startActivity(intent)
+        }
+
+        val botonOrdenesRealizadas = findViewById<Button>(R.id.btn_ordenes_restaurante)
+        botonOrdenesRealizadas.setOnClickListener {
+            val intent = Intent(
+                this,
+                BusquedaOrdenes::class.java
+            )
+            startActivity(intent)
+        }
+        val botonPedidosUsuario = findViewById<Button>(R.id.btn_mis_pedidos)
+        botonPedidosUsuario.setOnClickListener {
+            val intent = Intent(
+                this,
+                PedidosUsuario::class.java
+            )
+            startActivity(intent)
+        }
     }
 
     fun irProducto(){
@@ -144,6 +170,7 @@ class MainActivity : AppCompatActivity() {
         val textViewBienvenida = findViewById<TextView>(R.id.tv_bienvenida)
         val botonRestaurante = findViewById<Button>(R.id.btn_ir_restaurante)
         val botonPedidos = findViewById<Button>(R.id.btn_ir_pedidos)
+        val botonMisPedidos = findViewById<Button>(R.id.btn_mis_pedidos)
         if(BAuthUsuario.usuario != null){
             textViewBienvenida.text = "Bienvenido ${BAuthUsuario.usuario?.email}"
             botonLogin.visibility = View.INVISIBLE
@@ -151,6 +178,7 @@ class MainActivity : AppCompatActivity() {
             botonProducto.visibility = View.VISIBLE
             botonRestaurante.visibility = View.VISIBLE
             botonPedidos.visibility = View.VISIBLE
+            botonMisPedidos.visibility = View.VISIBLE
         } else{
             textViewBienvenida.text = "Ingresa al aplicativo"
             botonLogin.visibility = View.VISIBLE
@@ -158,6 +186,7 @@ class MainActivity : AppCompatActivity() {
             botonProducto.visibility = View.INVISIBLE
             botonRestaurante.visibility = View.INVISIBLE
             botonPedidos.visibility = View.INVISIBLE
+            botonMisPedidos.visibility = View.INVISIBLE
         }
     }
 

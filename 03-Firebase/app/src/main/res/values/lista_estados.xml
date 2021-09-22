@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista_estados">
+        <item>Por recibir</item>
+        <item>Preparando</item>
+        <item>Enviado</item>
+        <item>Entregado</item>
+        <item>Cancelado</item>
+    </string-array>
+</resources>

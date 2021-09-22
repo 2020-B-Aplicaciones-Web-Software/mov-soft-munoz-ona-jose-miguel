@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusquedaOrdenes">
+
+    <Spinner
+        android:id="@+id/sp_elegir_restaurante"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <ListView
+        android:id="@+id/lv_pedidos_realizados"
+        android:layout_width="371dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_elegir_restaurante"
+        app:layout_constraintStart_toStartOf="@+id/sp_elegir_restaurante"
+        app:layout_constraintTop_toBottomOf="@+id/sp_elegir_restaurante" />
+
+    <Spinner
+        android:id="@+id/sp_elegir_filtro"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/lv_pedidos_realizados"
+        app:layout_constraintStart_toStartOf="@+id/lv_pedidos_realizados"
+        app:layout_constraintTop_toBottomOf="@+id/lv_pedidos_realizados" />
+
+    <Button
+        android:id="@+id/btn_filtrar_ordenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Filtrar Ordenes"
+        app:layout_constraintEnd_toEndOf="@+id/sp_elegir_filtro"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/sp_elegir_filtro"
+        app:layout_constraintTop_toBottomOf="@+id/sp_elegir_filtro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

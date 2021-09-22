@@ -83,12 +83,26 @@
         app:layout_constraintTop_toBottomOf="@+id/et_cantidad_producto" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_hacer_pedido"
         android:layout_width="325dp"
         android:layout_height="54dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="88dp"
         android:text="Completar Pedido"
         app:layout_constraintEnd_toEndOf="@+id/lv_lista_productos"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="@+id/lv_lista_productos"
         app:layout_constraintTop_toBottomOf="@+id/lv_lista_productos" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btn_hacer_pedido"
+        app:layout_constraintEnd_toEndOf="@+id/lv_lista_productos"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/lv_lista_productos"
+        app:layout_constraintTop_toBottomOf="@+id/lv_lista_productos"
+        app:layout_constraintVertical_bias="0.097" />
 </androidx.constraintlayout.widget.ConstraintLayout>

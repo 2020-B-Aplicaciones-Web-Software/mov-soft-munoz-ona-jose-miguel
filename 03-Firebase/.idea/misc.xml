@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/layout/activity_busqueda_ordenes.xml" value="0.264" />
         <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/layout/activity_cproducto.xml" value="0.4" />
-        <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/layout/activity_drestaurante.xml" value="0.4" />
+        <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/layout/activity_drestaurante.xml" value="0.536" />
         <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/layout/activity_epedidos.xml" value="0.4" />
+        <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/layout/activity_fmapa.xml" value="0.25416666666666665" />
         <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/layout/activity_pedidos_usuario.xml" value="0.25416666666666665" />
         <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/menu/menu_pedido.xml" value="0.536" />
+        <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/menu/menu_por_recibir.xml" value="0.25416666666666665" />
+        <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/menu/menu_preparando.xml" value="0.25416666666666665" />
+        <entry key="..\:/Repositorios/Publico/mov-soft-munoz-ona-jose-miguel/03-Firebase/app/src/main/res/menu/menu_vacio.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
