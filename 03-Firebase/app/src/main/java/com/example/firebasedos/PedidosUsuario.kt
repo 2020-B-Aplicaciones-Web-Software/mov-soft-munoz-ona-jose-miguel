@@ -100,26 +100,33 @@ class PedidosUsuario : AppCompatActivity() {
         val restaurant = elemento.restaurante
         val db = Firebase.firestore
         val referenciaPedido = db.collection("pedidos").document(elemento.uid!!)
-        referenciaPedido
-            .update(mapOf(
+        referenciaPedido.update(
+            mapOf(
                 "calificacion" to elemento.calificacion,
-                "estado" to elemento.estado
-            ))
-            .addOnFailureListener {
-                Log.i("Firestore","Error al actualizar pedido")
+                "estado" to elemento.estado)
+        ).addOnSuccessListener {
+            db.runTransaction {
+                    transaction ->
+                if (restaurant != null){
+                    val referenciaRest = db.collection("restaurante").document(restaurant.uid!!)
+                    val restaurante = transaction.get(referenciaRest).toObject<FirestoreRestaurant>()
+                    if (restaurante!= null){
+                        restaurante.sumCalificaciones += elemento.calificacion!!
+                        restaurante.usuariosCalificado += 1
+                        restaurante.calcularPromedio()
+                        transaction
+                            .update(referenciaRest,mapOf(
+                                "calificacionPromedio" to restaurante.calificacionPromedio,
+                                "sumCalificaciones" to restaurante.sumCalificaciones,
+                                "usuariosCalificado" to restaurante.usuariosCalificado,
+                                "uid" to restaurant.uid
+                            ))
+                    }
+                }
             }
-        if (restaurant != null){
-            val referenciaRest = db.collection("restaurante").document(restaurant.uid!!)
-            restaurant.sumCalificaciones += elemento.calificacion!!
-            restaurant.usuariosCalificado += 1
-            restaurant.calcularPromedio()
-            referenciaRest
-                .update(mapOf(
-                    "calificacionPromedio" to restaurant.calificacionPromedio,
-                    "sumCalificaciones" to restaurant.sumCalificaciones,
-                    "usuariosCalificado" to restaurant.usuariosCalificado,
-                    "uid" to restaurant.uid
-                ))
+                .addOnFailureListener {
+                    Log.i("Firestore","Error al actualizar pedido ${it.toString()}")
+                }
         }
     }
 }
