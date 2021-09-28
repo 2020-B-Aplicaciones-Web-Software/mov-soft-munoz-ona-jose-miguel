@@ -14,7 +14,7 @@ import com.google.firebase.ktx.Firebase
 import java.text.SimpleDateFormat
 
 class EntradaDatosConcesionario : AppCompatActivity() {
-    val formatoFecha = SimpleDateFormat("dd/mm/yyyy")
+    val formatoFecha = SimpleDateFormat("dd/MM/yyyy")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_entrada_datos_concesionario)

@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat
 class EntradaDatosAuto : AppCompatActivity() {
     var numConcesionario = -1
     var nomConcesionario:String? = null
-    val formatoFecha = SimpleDateFormat("dd/mm/yyyy")
+    val formatoFecha = SimpleDateFormat("dd/MM/yyyy")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_entrada_datos_auto)
